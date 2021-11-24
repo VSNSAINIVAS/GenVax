@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="activity_main" type="id" />
+    <item name="DialHelpline" type="id" />
+    <item name="covidtracker" type="id" />
+    <item name="vaccination_schedule" type="id" />
+    <item name="details_of_vaccine" type="id" />
+</resources>

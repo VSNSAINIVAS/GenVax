@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Gen Vax</string>
+    <string name="welcome_to_genvax" />
+    <string name="helpline_number" />
+    <string name="schedule_your_vaccine" />
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+    <string name="email">Email</string>
+    <string name="fullname">Fullname</string>
+    <string name="loginhere">Already have an account? Login</string>
+    <string name="signuphere">Create a new account? Signup</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="shouldbe">password must contain combination of lower,upper case letters and digits</string>
+    <string name="should">password must be combination of lower,upper case letters and digits</string>
+    <string name="password_must_be_combination_of_lower_upper_case_letters_and_digits">password must be combination of lower upper case letters and digits</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vaccine"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to_genvax"
+        android:textSize="30sp"
+        android:textColor="@color/purple_500"/>
+
+    <Button
+        android:id="@+id/DialHelpline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HELPLINE NUMBER" />
+
+    <Button
+        android:id="@+id/covidtracker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="COVID TRACKER" />
+
+    <Button
+        android:id="@+id/vaccination_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SCHEDULE YOUR VACCINE" />
+
+    <Button
+        android:id="@+id/details_of_vaccine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VACCINE DETAILS" />
+
+
+
+</LinearLayout>
