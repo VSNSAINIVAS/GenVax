@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     TextView textView;
-    Button dialnumber,openwebpage,otherActivity,view_details;
+    Button dialnumber,openwebpage,otherActivity,view_details,national,who;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,12 +18,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         view_details = findViewById(R.id.details_of_vaccine);
         dialnumber = findViewById(R.id.DialHelpline);
         openwebpage = findViewById(R.id.covidtracker);
+        national = findViewById(R.id.DialHelplinenational);
+        who = findViewById(R.id.WHO_WEBSITE);
         textView = (TextView) findViewById(R.id.text);
 
         dialnumber.setOnClickListener(this);
         openwebpage.setOnClickListener(this);
         otherActivity.setOnClickListener(this);
         view_details.setOnClickListener(this);
+        national.setOnClickListener(this);
+        who.setOnClickListener(this);
         Log.d("tag","OnCreate");
     }
     @Override
@@ -55,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch(view.getId()){
             case R.id.vaccination_schedule:
-                Intent intent = new Intent(MainActivity.this,otherActivity.class);
+                Intent intent = new Intent(MainActivity.this,MainActivity3.class);
                 startActivity(intent);
                 break;
             case R.id.DialHelpline:
@@ -67,8 +71,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent2);
                 break;
             case R.id.details_of_vaccine:
-                Intent intent3 = new Intent(MainActivity.this,MainActivity3.class);
+                Intent intent3 = new Intent(MainActivity.this,List.class);
                 startActivity(intent3);
+                break;
+            case R.id.DialHelplinenational:
+                Intent intent4 = new Intent(Intent.ACTION_DIAL,Uri.parse("tel:1800-180-1104"));
+                startActivity(intent4);
+                break;
+            case R.id.WHO_WEBSITE:
+                Intent intent5 = new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.who.int/"));
+                startActivity(intent5);
+                break;
         }
     }
 }

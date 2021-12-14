@@ -7,6 +7,7 @@ import androidx.core.app.NotificationManagerCompat;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
@@ -28,7 +29,25 @@ public class Login extends AppCompatActivity {
     Button buttonLogin;
     TextView textViewSignUp;
     ProgressBar progressBar;
+    private NotificationManagerCompat notificationManager;
 
+    public static final String CHANNEL_1_ID = "channel1";
+
+    private void createNotificationChannel() {
+        // Create the NotificationChannel, but only on API 26+ because
+        // the NotificationChannel class is new and not in the support library
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            CharSequence name = "Gen Vax";
+            String description = "Login Success";
+            int importance = NotificationManager.IMPORTANCE_DEFAULT;
+            NotificationChannel channel = new NotificationChannel(CHANNEL_1_ID, "channel1", NotificationManager.IMPORTANCE_DEFAULT);
+            channel.setDescription(description);
+            // Register the channel with the system; you can't change the importance
+            // or other notification behaviors after this
+            NotificationManager notificationManager = getSystemService(NotificationManager.class);
+            notificationManager.createNotificationChannel(channel);
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,11 +60,7 @@ public class Login extends AppCompatActivity {
         textViewSignUp = findViewById(R.id.signUpText);
         progressBar = findViewById(R.id.progress);
 
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
-            NotificationChannel channel1 = new NotificationChannel("My Notification","My Notification",NotificationManager.IMPORTANCE_HIGH);
-            NotificationManager manager = getSystemService(NotificationManager.class);
-            manager.createNotificationChannel(channel1);
-        }
+        notificationManager = NotificationManagerCompat.from(this);
 
         textViewSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,14 +100,21 @@ public class Login extends AppCompatActivity {
                                     if(result.equals("Login Success")){
                                         Toast.makeText(getApplicationContext(),result,Toast.LENGTH_SHORT).show();
                                         Intent intent = new Intent(getApplicationContext(),MainActivity.class);
-                                        NotificationCompat.Builder builder = new NotificationCompat.Builder(Login.this,"My notification");
-                                        builder.setContentTitle("GenVax");
-                                        builder.setContentText("Login Success");
-                                        builder.setSmallIcon(R.drawable.ic_notifications);
-                                        builder.setAutoCancel(true);
+                                        // Create an explicit intent for an Activity in your app
+                                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                        PendingIntent pendingIntent = PendingIntent.getActivity(Login.this, 0, intent, 0);
 
-                                        NotificationManagerCompat managerCompat = NotificationManagerCompat.from(Login.this);
-                                        managerCompat.notify(1,builder.build());
+                                        NotificationCompat.Builder builder = new NotificationCompat.Builder(Login.this, "channel1")
+                                                .setSmallIcon(R.drawable.ic_notifications)
+                                                .setContentTitle("My notification")
+                                                .setContentText("Hello World!")
+                                                .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+                                                // Set the intent that will fire when the user taps the notification
+                                                .setContentIntent(pendingIntent)
+                                                .setAutoCancel(true);
+                                        NotificationManagerCompat notificationManager = NotificationManagerCompat.from(Login.this);
+
+                                        notificationManager.notify(30, builder.build());
                                         startActivity(intent);
                                         finish();
                                     }
@@ -109,6 +131,5 @@ public class Login extends AppCompatActivity {
                 }
             }
         });
-
     }
 }
