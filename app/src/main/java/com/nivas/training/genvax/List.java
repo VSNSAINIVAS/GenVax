@@ -35,7 +35,6 @@ public class List extends AppCompatActivity {
 
         listView = findViewById(R.id.Listview);
 
-
         MyAdapter adapter = new MyAdapter(this,mTitle,mCategory,images);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -71,10 +70,10 @@ public class List extends AppCompatActivity {
                     bundle.putInt("image",images[0]);
                     intent.putExtras(bundle);
                     intent.putExtra("title",mTitle[2]);
-                    intent.putExtra("doses","Number of doses : 1");
+                    intent.putExtra("doses","Number of doses : 2");
                     intent.putExtra("period","Period of duration : 6Months");
                     intent.putExtra("position",""+2);
-
+                    intent.putExtra("link","https://www.who.int/immunization/polio_grad_opv_birth_dose.pdf");
                     startActivity(intent);
                 }
                 if(position==3){

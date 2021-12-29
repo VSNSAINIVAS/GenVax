@@ -105,12 +105,14 @@ public class AnotherActivity extends AppCompatActivity {
         if(position == 2){
             Intent intent = getIntent();
 
-            TextView link = findViewById(R.id.linksText);
+             TextView link = findViewById(R.id.linksText);
+//            TextView link;
             Bundle bundle =this.getIntent().getExtras();
             int pic = bundle.getInt("image");
             String sTitle = intent.getStringExtra("title");
             String sDoses = intent.getStringExtra("doses");
             String sPeriod = intent.getStringExtra("period");
+            String theLink = intent.getStringExtra("link");
 
             link.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -125,9 +127,6 @@ public class AnotherActivity extends AppCompatActivity {
             title.setText(sTitle);
             doses.setText(sDoses);
             period.setText(sPeriod);
-
-
-
 
             actionBar.setTitle(sTitle);
         }
@@ -155,8 +154,6 @@ public class AnotherActivity extends AppCompatActivity {
             doses.setText(sDoses);
             period.setText(sPeriod);
 
-
-
             actionBar.setTitle(sTitle);
         }
         if(position == 4){
@@ -171,7 +168,7 @@ public class AnotherActivity extends AppCompatActivity {
             link.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.cdc.gov/vaccines/vpd/polio/index.html"));
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.cdc.gov/vaccines/parents/diseases/rotavirus.html"));
                     startActivity(intent);
                     finish();
                 }
@@ -180,9 +177,6 @@ public class AnotherActivity extends AppCompatActivity {
             imageView.setImageResource(pic);
             title.setText(sTitle);
             doses.setText(sDoses);
-
-
-
 
             actionBar.setTitle(sTitle);
         }
@@ -198,7 +192,7 @@ public class AnotherActivity extends AppCompatActivity {
             link.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://vk.ovg.ox.ac.uk/vk/5-1-dtapipvhib-vaccine"));
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.cdc.gov/vaccines/parents/diseases/measles.html"));
                     startActivity(intent);
                     finish();
                 }
@@ -207,9 +201,6 @@ public class AnotherActivity extends AppCompatActivity {
             imageView.setImageResource(pic);
             title.setText(sTitle);
             doses.setText(sDoses);
-
-
-
 
             actionBar.setTitle(sTitle);
         }
@@ -225,7 +216,7 @@ public class AnotherActivity extends AppCompatActivity {
             link.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://wikipedia.com"));
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.who.int/elena/titles/guidance_summaries/vitamina_children/en/"));
                     startActivity(intent);
                     finish();
                 }
@@ -234,9 +225,6 @@ public class AnotherActivity extends AppCompatActivity {
             imageView.setImageResource(pic);
             title.setText(sTitle);
             doses.setText(sDoses);
-
-
-
 
             actionBar.setTitle(sTitle);
         }
@@ -252,7 +240,7 @@ public class AnotherActivity extends AppCompatActivity {
             link.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://wikipedia.com"));
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.seruminstitute.com/health_faq_dtp.php"));
                     startActivity(intent);
                     finish();
                 }
@@ -261,9 +249,6 @@ public class AnotherActivity extends AppCompatActivity {
             imageView.setImageResource(pic);
             title.setText(sTitle);
             doses.setText(sDoses);
-
-
-
 
             actionBar.setTitle(sTitle);
         }
@@ -279,7 +264,7 @@ public class AnotherActivity extends AppCompatActivity {
             link.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://wikipedia.com"));
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://nhm.gov.in/New_Updates_2018/NHM_Components/Immunization/report/National_%20Immunization_Schedule.pdf"));
                     startActivity(intent);
                     finish();
                 }
@@ -288,9 +273,6 @@ public class AnotherActivity extends AppCompatActivity {
             imageView.setImageResource(pic);
             title.setText(sTitle);
             doses.setText(sDoses);
-
-
-
 
             actionBar.setTitle(sTitle);
         }
@@ -306,7 +288,7 @@ public class AnotherActivity extends AppCompatActivity {
             link.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://wikipedia.com"));
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.cdc.gov/vaccines/parents/diseases/measles.html"));
                     startActivity(intent);
                     finish();
                 }
@@ -315,9 +297,6 @@ public class AnotherActivity extends AppCompatActivity {
             imageView.setImageResource(pic);
             title.setText(sTitle);
             doses.setText(sDoses);
-
-
-
 
             actionBar.setTitle(sTitle);
         }
@@ -333,7 +312,7 @@ public class AnotherActivity extends AppCompatActivity {
             link.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://wikipedia.com"));
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.who.int/elena/titles/guidance_summaries/vitamina_children/en/"));
                     startActivity(intent);
                     finish();
                 }
@@ -342,9 +321,6 @@ public class AnotherActivity extends AppCompatActivity {
             imageView.setImageResource(pic);
             title.setText(sTitle);
             doses.setText(sDoses);
-
-
-
 
             actionBar.setTitle(sTitle);
         }if(position == 11){
@@ -359,7 +335,7 @@ public class AnotherActivity extends AppCompatActivity {
             link.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://wikipedia.com"));
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.seruminstitute.com/health_faq_dtp.php"));
                     startActivity(intent);
                     finish();
                 }
@@ -368,9 +344,6 @@ public class AnotherActivity extends AppCompatActivity {
             imageView.setImageResource(pic);
             title.setText(sTitle);
             doses.setText(sDoses);
-
-
-
 
             actionBar.setTitle(sTitle);
         }
@@ -386,7 +359,7 @@ public class AnotherActivity extends AppCompatActivity {
             link.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://wikipedia.com"));
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.cdc.gov/vaccines/parents/diseases/tetanus.html"));
                     startActivity(intent);
                     finish();
                 }
@@ -395,9 +368,6 @@ public class AnotherActivity extends AppCompatActivity {
             imageView.setImageResource(pic);
             title.setText(sTitle);
             doses.setText(sDoses);
-
-
-
 
             actionBar.setTitle(sTitle);
         }
@@ -422,9 +392,6 @@ public class AnotherActivity extends AppCompatActivity {
             imageView.setImageResource(pic);
             title.setText(sTitle);
             doses.setText(sDoses);
-
-
-
 
             actionBar.setTitle(sTitle);
         }
