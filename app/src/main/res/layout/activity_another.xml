@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context=".AnotherActivity">
+    tools:context=".AnotherActivity"
+    android:background="#EDFAF8">
 
     <ImageView
         android:layout_width="150dp"
@@ -43,10 +44,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/linksText"
-        android:textColor="#3EA0ED"
+        android:textColor="#364BC1"
         android:textSize="20sp"
         android:gravity="center"
         android:text="click here to see more details"
+        android:layout_below="@id/period_of_duration"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/period_of_duration"
+        android:textColor="#3EA0ED"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="Duration"
         android:layout_below="@id/dosesText"
         />
 

@@ -49,7 +49,8 @@ public class List extends AppCompatActivity {
                     intent.putExtra("title",mTitle[0]);
                     intent.putExtra("doses","Number of doses : 1");
                     intent.putExtra("position",""+0);
-                    intent.putExtra("link","http://wikipedia.com");
+                    intent.putExtra("period","Period of duration : 6Months");
+
                     startActivity(intent);
                 }
                 if(position==1){
@@ -59,8 +60,9 @@ public class List extends AppCompatActivity {
                     intent.putExtras(bundle);
                     intent.putExtra("title",mTitle[1]);
                     intent.putExtra("doses","Number of doses : 1");
+                    intent.putExtra("period","Period of duration : 6Months");
                     intent.putExtra("position",""+1);
-                    intent.putExtra("link","http://wikipedia.com");
+
                     startActivity(intent);
                 }
                 if(position==2){
@@ -70,8 +72,9 @@ public class List extends AppCompatActivity {
                     intent.putExtras(bundle);
                     intent.putExtra("title",mTitle[2]);
                     intent.putExtra("doses","Number of doses : 1");
+                    intent.putExtra("period","Period of duration : 6Months");
                     intent.putExtra("position",""+2);
-                    intent.putExtra("link","http://wikipedia.com");
+
                     startActivity(intent);
                 }
                 if(position==3){
@@ -80,9 +83,10 @@ public class List extends AppCompatActivity {
                     bundle.putInt("image",images[0]);
                     intent.putExtras(bundle);
                     intent.putExtra("title",mTitle[3]);
+                    intent.putExtra("period","Period of duration : 6Months");
                     intent.putExtra("doses","Number of doses : 1");
                     intent.putExtra("position",""+3);
-                    intent.putExtra("link","http://wikipedia.com");
+
                     startActivity(intent);
                 }
                 if(position==4){
@@ -90,10 +94,11 @@ public class List extends AppCompatActivity {
                     Bundle bundle = new Bundle();
                     bundle.putInt("image",images[0]);
                     intent.putExtras(bundle);
+                    intent.putExtra("period","Period of duration : 6Months");
                     intent.putExtra("title",mTitle[4]);
                     intent.putExtra("doses","Number of doses : 1");
                     intent.putExtra("position",""+4);
-                    intent.putExtra("link","http://wikipedia.com");
+
                     startActivity(intent);
                 }
                 if(position==5){
@@ -101,10 +106,11 @@ public class List extends AppCompatActivity {
                     Bundle bundle = new Bundle();
                     bundle.putInt("image",images[0]);
                     intent.putExtras(bundle);
+                    intent.putExtra("period","Period of duration : 6Months");
                     intent.putExtra("title",mTitle[5]);
                     intent.putExtra("doses","Number of doses : 1");
                     intent.putExtra("position",""+5);
-                    intent.putExtra("link","http://wikipedia.com");
+
                     startActivity(intent);
                 }
                 if(position==6){
@@ -112,10 +118,11 @@ public class List extends AppCompatActivity {
                     Bundle bundle = new Bundle();
                     bundle.putInt("image",images[0]);
                     intent.putExtras(bundle);
+                    intent.putExtra("period","Period of duration : 6Months");
                     intent.putExtra("title",mTitle[6]);
                     intent.putExtra("doses","Number of doses : 1");
                     intent.putExtra("position",""+6);
-                    intent.putExtra("link","http://wikipedia.com");
+
                     startActivity(intent);
                 }
                 if(position==7){
@@ -124,9 +131,10 @@ public class List extends AppCompatActivity {
                     bundle.putInt("image",images[0]);
                     intent.putExtras(bundle);
                     intent.putExtra("title",mTitle[7]);
+                    intent.putExtra("period","Period of duration : 6Months");
                     intent.putExtra("doses","Number of doses : 1");
                     intent.putExtra("position",""+7);
-                    intent.putExtra("link","http://wikipedia.com");
+
                     startActivity(intent);
                 }
                 if(position==8){
@@ -135,9 +143,10 @@ public class List extends AppCompatActivity {
                     bundle.putInt("image",images[0]);
                     intent.putExtras(bundle);
                     intent.putExtra("title",mTitle[8]);
+                    intent.putExtra("period","Period of duration : 6Months");
                     intent.putExtra("doses","Number of doses : 1");
                     intent.putExtra("position",""+8);
-                    intent.putExtra("link","http://wikipedia.com");
+
                     startActivity(intent);
                 }
                 if(position==9){
@@ -147,8 +156,9 @@ public class List extends AppCompatActivity {
                     intent.putExtras(bundle);
                     intent.putExtra("title",mTitle[9]);
                     intent.putExtra("doses","Number of doses : 1");
+                    intent.putExtra("period","Period of duration : 6Months");
                     intent.putExtra("position",""+9);
-                    intent.putExtra("link","http://wikipedia.com");
+
                     startActivity(intent);
                 }
                 if(position==10){
@@ -156,10 +166,11 @@ public class List extends AppCompatActivity {
                     Bundle bundle = new Bundle();
                     bundle.putInt("image",images[0]);
                     intent.putExtras(bundle);
+                    intent.putExtra("period","Period of duration : 6Months");
                     intent.putExtra("title",mTitle[10]);
                     intent.putExtra("doses","Number of doses : 1");
                     intent.putExtra("position",""+10);
-                    intent.putExtra("link","http://wikipedia.com");
+
                     startActivity(intent);
                 }
                 if(position==11){
@@ -168,9 +179,10 @@ public class List extends AppCompatActivity {
                     bundle.putInt("image",images[0]);
                     intent.putExtras(bundle);
                     intent.putExtra("title",mTitle[11]);
+                    intent.putExtra("period","Period of duration : 6Months");
                     intent.putExtra("doses","Number of doses : 1");
                     intent.putExtra("position",""+11);
-                    intent.putExtra("link","http://wikipedia.com");
+
                     startActivity(intent);
                 }
                 if(position==12){
@@ -180,8 +192,9 @@ public class List extends AppCompatActivity {
                     intent.putExtras(bundle);
                     intent.putExtra("title",mTitle[12]);
                     intent.putExtra("doses","Number of doses : 1");
+                    intent.putExtra("period","Period of duration : 6Months");
                     intent.putExtra("position",""+12);
-                    intent.putExtra("link","http://wikipedia.com");
+
                     startActivity(intent);
                 }
                 if(position==13){
@@ -191,8 +204,9 @@ public class List extends AppCompatActivity {
                     intent.putExtras(bundle);
                     intent.putExtra("title",mTitle[13]);
                     intent.putExtra("doses","Number of doses : 1");
+                    intent.putExtra("period","Period of duration : 6Months");
                     intent.putExtra("position",""+13);
-                    intent.putExtra("link","http://wikipedia.com");
+
                     startActivity(intent);
                 }
             }

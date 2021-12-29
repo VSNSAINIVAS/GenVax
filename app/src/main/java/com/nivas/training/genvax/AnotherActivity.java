@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class AnotherActivity extends AppCompatActivity {
     ImageView imageView,back;
-    TextView title,doses;
+    TextView title,doses,period;
     int position;
 
     @Override
@@ -31,6 +31,7 @@ public class AnotherActivity extends AppCompatActivity {
         title = findViewById(R.id.titleText);
         doses = findViewById(R.id.dosesText);
         back = findViewById(R.id.backbutton);
+        period = findViewById(R.id.period_of_duration);
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,11 +53,12 @@ public class AnotherActivity extends AppCompatActivity {
             int pic = bundle.getInt("image");
             String sTitle = intent.getStringExtra("title");
             String sDoses = intent.getStringExtra("doses");
+            String sPeriod = intent.getStringExtra("period");
 
             link.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://wikipedia.com"));
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://meet.google.com/iiy-vuce-ivu"));
                     startActivity(intent);
                     finish();
                 }
@@ -65,7 +67,7 @@ public class AnotherActivity extends AppCompatActivity {
             imageView.setImageResource(pic);
             title.setText(sTitle);
             doses.setText(sDoses);
-
+            period.setText(sPeriod);
 
 
 
@@ -80,6 +82,7 @@ public class AnotherActivity extends AppCompatActivity {
             int pic = bundle.getInt("image");
             String sTitle = intent.getStringExtra("title");
             String sDoses = intent.getStringExtra("doses");
+            String sPeriod = intent.getStringExtra("period");
 
             link.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -93,7 +96,7 @@ public class AnotherActivity extends AppCompatActivity {
             imageView.setImageResource(pic);
             title.setText(sTitle);
             doses.setText(sDoses);
-
+            period.setText(sPeriod);
 
 
 
@@ -107,6 +110,7 @@ public class AnotherActivity extends AppCompatActivity {
             int pic = bundle.getInt("image");
             String sTitle = intent.getStringExtra("title");
             String sDoses = intent.getStringExtra("doses");
+            String sPeriod = intent.getStringExtra("period");
 
             link.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -120,6 +124,7 @@ public class AnotherActivity extends AppCompatActivity {
             imageView.setImageResource(pic);
             title.setText(sTitle);
             doses.setText(sDoses);
+            period.setText(sPeriod);
 
 
 
@@ -134,6 +139,7 @@ public class AnotherActivity extends AppCompatActivity {
             int pic = bundle.getInt("image");
             String sTitle = intent.getStringExtra("title");
             String sDoses = intent.getStringExtra("doses");
+            String sPeriod = intent.getStringExtra("period");
 
             link.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -147,7 +153,7 @@ public class AnotherActivity extends AppCompatActivity {
             imageView.setImageResource(pic);
             title.setText(sTitle);
             doses.setText(sDoses);
-
+            period.setText(sPeriod);
 
 
 
@@ -179,7 +185,8 @@ public class AnotherActivity extends AppCompatActivity {
 
 
             actionBar.setTitle(sTitle);
-        }if(position == 5){
+        }
+        if(position == 5){
             Intent intent = getIntent();
 
             TextView link = findViewById(R.id.linksText);
@@ -205,7 +212,8 @@ public class AnotherActivity extends AppCompatActivity {
 
 
             actionBar.setTitle(sTitle);
-        }if(position == 6){
+        }
+        if(position == 6){
             Intent intent = getIntent();
 
             TextView link = findViewById(R.id.linksText);
@@ -231,7 +239,8 @@ public class AnotherActivity extends AppCompatActivity {
 
 
             actionBar.setTitle(sTitle);
-        }if(position == 7){
+        }
+        if(position == 7){
             Intent intent = getIntent();
 
             TextView link = findViewById(R.id.linksText);
@@ -257,7 +266,8 @@ public class AnotherActivity extends AppCompatActivity {
 
 
             actionBar.setTitle(sTitle);
-        }if(position == 8){
+        }
+        if(position == 8){
             Intent intent = getIntent();
 
             TextView link = findViewById(R.id.linksText);
@@ -310,7 +320,8 @@ public class AnotherActivity extends AppCompatActivity {
 
 
             actionBar.setTitle(sTitle);
-        }if(position == 10){
+        }
+        if(position == 10){
             Intent intent = getIntent();
 
             TextView link = findViewById(R.id.linksText);
@@ -331,6 +342,10 @@ public class AnotherActivity extends AppCompatActivity {
             imageView.setImageResource(pic);
             title.setText(sTitle);
             doses.setText(sDoses);
+
+
+
+
             actionBar.setTitle(sTitle);
         }if(position == 11){
             Intent intent = getIntent();
@@ -358,7 +373,8 @@ public class AnotherActivity extends AppCompatActivity {
 
 
             actionBar.setTitle(sTitle);
-        }if(position == 12){
+        }
+        if(position == 12){
             Intent intent = getIntent();
 
             TextView link = findViewById(R.id.linksText);

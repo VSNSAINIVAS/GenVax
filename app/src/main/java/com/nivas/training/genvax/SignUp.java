@@ -6,6 +6,7 @@ import androidx.core.app.NotificationManagerCompat;
 
 import android.app.Notification;
 import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -63,7 +64,7 @@ public class SignUp extends AppCompatActivity {
                 int count2 = 0;
                 int count3 = 0;
 
-                for(int i=0;i<password.length();i++){
+                for(int i=0;i<password.length();i++) {
                     if(password.charAt(i)>=65 && password.charAt(i)<=90)
                         count1+=1;
                     else if(password.charAt(i)>=97 && password.charAt(i)<=122)
@@ -73,7 +74,7 @@ public class SignUp extends AppCompatActivity {
                 }
 
                 if (!fullname.equals("") && !username.equals("") && !password.equals("") && !email.equals("")) {
-                    if(!isValid(email)){
+                    if(!isValid(email)) {
                         Toast.makeText(getApplicationContext(), "Invalid Email", Toast.LENGTH_SHORT).show();
                         return;
                     }
@@ -99,14 +100,29 @@ public class SignUp extends AppCompatActivity {
                                 data[1] = username;
                                 data[2] = password;
                                 data[3] = email;
-                                PutData putData = new PutData("http://192.168.0.100/LoginRegister/signup.php", "POST", field, data);
+                                PutData putData = new PutData("192.168.0.119/LoginRegister/signup.php", "POST", field, data);
                                 if (putData.startPut()) {
                                     if (putData.onComplete()) {
                                         progressBar.setVisibility(View.GONE);
                                         String result = putData.getResult();
                                         if(result.equals("Sign Up Success")){
                                             Toast.makeText(getApplicationContext(),result,Toast.LENGTH_SHORT).show();
-                                            Intent intent = new Intent(getApplicationContext(),Login.class);
+                                            Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                                            // Create an explicit intent for an Activity in your app
+                                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                            PendingIntent pendingIntent = PendingIntent.getActivity(SignUp.this, 0, intent, 0);
+
+                                            NotificationCompat.Builder builder = new NotificationCompat.Builder(SignUp.this, "channel1")
+                                                    .setSmallIcon(R.drawable.ic_notifications)
+                                                    .setContentTitle("GenVax")
+                                                    .setContentText("Signup success")
+                                                    .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+                                                    // Set the intent that will fire when the user taps the notification
+                                                    .setContentIntent(pendingIntent)
+                                                    .setAutoCancel(true);
+                                            NotificationManagerCompat notificationManager = NotificationManagerCompat.from(SignUp.this);
+
+                                            notificationManager.notify(30, builder.build());
                                             startActivity(intent);
                                             finish();
                                         }
@@ -129,7 +145,7 @@ public class SignUp extends AppCompatActivity {
     public static boolean isValid(String email)
     {
         String emailRegex = "^[a-zA-Z0-9_+&*-]+(?:\\."+
-                "[a-zA-Z0-9_+&*-]+)*@" +
+                "[a-zA-Z0-9_+&-]+)@" +
                 "(?:[a-zA-Z0-9-]+\\.)+[a-z" +
                 "A-Z]{2,7}$";
 

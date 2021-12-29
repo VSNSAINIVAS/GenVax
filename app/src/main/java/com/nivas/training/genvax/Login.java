@@ -29,26 +29,6 @@ public class Login extends AppCompatActivity {
     Button buttonLogin;
     TextView textViewSignUp;
     ProgressBar progressBar;
-    private NotificationManagerCompat notificationManager;
-
-    public static final String CHANNEL_1_ID = "channel1";
-
-    private void createNotificationChannel() {
-        // Create the NotificationChannel, but only on API 26+ because
-        // the NotificationChannel class is new and not in the support library
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            CharSequence name = "Gen Vax";
-            String description = "Login Success";
-            int importance = NotificationManager.IMPORTANCE_DEFAULT;
-            NotificationChannel channel = new NotificationChannel(CHANNEL_1_ID, "channel1", NotificationManager.IMPORTANCE_DEFAULT);
-            channel.setDescription(description);
-            // Register the channel with the system; you can't change the importance
-            // or other notification behaviors after this
-            NotificationManager notificationManager = getSystemService(NotificationManager.class);
-            notificationManager.createNotificationChannel(channel);
-        }
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,7 +40,7 @@ public class Login extends AppCompatActivity {
         textViewSignUp = findViewById(R.id.signUpText);
         progressBar = findViewById(R.id.progress);
 
-        notificationManager = NotificationManagerCompat.from(this);
+        NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
 
         textViewSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,7 +72,7 @@ public class Login extends AppCompatActivity {
                             String[] data = new String[2];
                             data[0] = username;
                             data[1] = password;
-                            PutData putData = new PutData("http://192.168.0.100/LoginRegister/login.php", "POST", field, data);
+                            PutData putData = new PutData("http://192.168.0.119/LoginRegister/login.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
                                     progressBar.setVisibility(View.GONE);
@@ -106,8 +86,8 @@ public class Login extends AppCompatActivity {
 
                                         NotificationCompat.Builder builder = new NotificationCompat.Builder(Login.this, "channel1")
                                                 .setSmallIcon(R.drawable.ic_notifications)
-                                                .setContentTitle("My notification")
-                                                .setContentText("Hello World!")
+                                                .setContentTitle("GenVax")
+                                                .setContentText("Login success")
                                                 .setPriority(NotificationCompat.PRIORITY_DEFAULT)
                                                 // Set the intent that will fire when the user taps the notification
                                                 .setContentIntent(pendingIntent)

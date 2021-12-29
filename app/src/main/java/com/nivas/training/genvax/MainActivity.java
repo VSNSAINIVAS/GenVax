@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     TextView textView;
     Button dialnumber,openwebpage,otherActivity,view_details,national,who;
@@ -59,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch(view.getId()){
             case R.id.vaccination_schedule:
-                Intent intent = new Intent(MainActivity.this,MainActivity3.class);
+                Intent intent = new Intent(MainActivity.this, MainActivity3.class);
                 startActivity(intent);
                 break;
             case R.id.DialHelpline:
