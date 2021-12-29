@@ -13,6 +13,9 @@
         android:theme="@style/Theme.GenVax"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".Running"
+            android:exported="false" />
+        <activity
             android:name=".FullscreenActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="false"

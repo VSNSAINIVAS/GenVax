@@ -79,7 +79,7 @@ public class Login extends AppCompatActivity {
                                     String result = putData.getResult();
                                     if(result.equals("Login Success")){
                                         Toast.makeText(getApplicationContext(),result,Toast.LENGTH_SHORT).show();
-                                        Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                                        Intent intent = new Intent(getApplicationContext(),Running.class);
                                         // Create an explicit intent for an Activity in your app
                                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                         PendingIntent pendingIntent = PendingIntent.getActivity(Login.this, 0, intent, 0);

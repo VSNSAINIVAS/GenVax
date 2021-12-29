@@ -23,7 +23,12 @@ import com.vishnusivadas.advanced_httpurlconnection.PutData;
 
 import java.util.regex.Pattern;
 
-public class SignUp extends AppCompatActivity {
+interface genvax{
+    boolean isValid(String email) ;
+    boolean isValidpassword(String password);
+}
+
+public class SignUp extends AppCompatActivity implements genvax{
 
     TextInputEditText textInputEditTextfullname, textInputEditTextUsername, textInputEditTextPassword, textInputEditTextEmail;
     Button buttonSignUp;
@@ -60,25 +65,13 @@ public class SignUp extends AppCompatActivity {
                 password = String.valueOf(textInputEditTextPassword.getText());
                 email = String.valueOf(textInputEditTextEmail.getText());
 
-                int count1 = 0;
-                int count2 = 0;
-                int count3 = 0;
-
-                for(int i=0;i<password.length();i++) {
-                    if(password.charAt(i)>=65 && password.charAt(i)<=90)
-                        count1+=1;
-                    else if(password.charAt(i)>=97 && password.charAt(i)<=122)
-                        count2+=1;
-                    else if (password.charAt(i)>=48 && password.charAt(i)<=57)
-                        count3+=1;
-                }
 
                 if (!fullname.equals("") && !username.equals("") && !password.equals("") && !email.equals("")) {
                     if(!isValid(email)) {
                         Toast.makeText(getApplicationContext(), "Invalid Email", Toast.LENGTH_SHORT).show();
                         return;
                     }
-                   if(count1==0 || count2==0 || count3==0){
+                   if(isValidpassword(password)){
                         Toast.makeText(getApplicationContext(), "Set password that satisfy given fields", Toast.LENGTH_SHORT).show();
                     }
                     else{
@@ -143,7 +136,27 @@ public class SignUp extends AppCompatActivity {
         });
     }
 
-    public static boolean isValid(String email)
+    public boolean isValidpassword(String password){
+        int count1 = 0;
+        int count2 = 0;
+        int count3 = 0;
+
+        for(int i=0;i<password.length();i++) {
+            if(password.charAt(i)>=65 && password.charAt(i)<=90)
+                count1+=1;
+            else if(password.charAt(i)>=97 && password.charAt(i)<=122)
+                count2+=1;
+            else if (password.charAt(i)>=48 && password.charAt(i)<=57)
+                count3+=1;
+        }
+
+        if(count1==0 || count2 == 0 || count3 == 0)
+            return false;
+        return true;
+
+    }
+
+    public boolean isValid(String email)
     {
         String emailRegex = "^[a-zA-Z0-9_+&*-]+(?:\\.[a-zA-Z0-9_+&*-]+)*@" +  //part before @
                 "(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}$";
