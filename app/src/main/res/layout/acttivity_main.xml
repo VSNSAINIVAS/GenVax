@@ -26,14 +26,14 @@
         android:layout_height="wrap_content"
         android:text="NATIONAL HELPLINE NUMBER"
         android:textStyle="bold"
-        android:fontFamily="@font/sourcecode"/>
+        android:fontFamily="@font/poppinsbold"/>
 
     <Button
         android:id="@+id/DialHelpline"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="COVID-19 HELPLINE NUMBER"
-        android:fontFamily="@font/sourcecode"/>
+        android:fontFamily="@font/poppinsbold"/>
 
     <Button
         android:id="@+id/WHO_WEBSITE"
