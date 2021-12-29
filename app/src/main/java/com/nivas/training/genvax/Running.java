@@ -18,7 +18,7 @@ public class Running extends AppCompatActivity {
         image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Running.this,MainActivity.class);
+                Intent intent = new Intent(Running.this,Login.class);
                 startActivity(intent);
             }
         });

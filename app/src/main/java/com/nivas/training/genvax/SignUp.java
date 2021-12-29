@@ -71,7 +71,7 @@ public class SignUp extends AppCompatActivity implements genvax{
                         Toast.makeText(getApplicationContext(), "Invalid Email", Toast.LENGTH_SHORT).show();
                         return;
                     }
-                   if(isValidpassword(password)){
+                   if(!isValidpassword(password)){
                         Toast.makeText(getApplicationContext(), "Set password that satisfy given fields", Toast.LENGTH_SHORT).show();
                     }
                     else{
