@@ -58,7 +58,7 @@ public class AnotherActivity extends AppCompatActivity {
             link.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://meet.google.com/iiy-vuce-ivu"));
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.cdc.gov/tb/publications/factsheets/prevention/bcg.htm"));
                     startActivity(intent);
                     finish();
                 }
@@ -87,7 +87,7 @@ public class AnotherActivity extends AppCompatActivity {
             link.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://wikipedia.com"));
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.cdc.gov/vaccines/parents/diseases/hepb.html"));
                     startActivity(intent);
                     finish();
                 }
@@ -115,7 +115,7 @@ public class AnotherActivity extends AppCompatActivity {
             link.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://wikipedia.com"));
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.who.int/immunization/polio_grad_opv_birth_dose.pdf"));
                     startActivity(intent);
                     finish();
                 }
@@ -144,7 +144,7 @@ public class AnotherActivity extends AppCompatActivity {
             link.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://wikipedia.com"));
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.rxlist.com/orimune-drug.htm"));
                     startActivity(intent);
                     finish();
                 }
@@ -171,7 +171,7 @@ public class AnotherActivity extends AppCompatActivity {
             link.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://wikipedia.com"));
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.cdc.gov/vaccines/vpd/polio/index.html"));
                     startActivity(intent);
                     finish();
                 }
@@ -198,7 +198,7 @@ public class AnotherActivity extends AppCompatActivity {
             link.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://wikipedia.com"));
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://vk.ovg.ox.ac.uk/vk/5-1-dtapipvhib-vaccine"));
                     startActivity(intent);
                     finish();
                 }

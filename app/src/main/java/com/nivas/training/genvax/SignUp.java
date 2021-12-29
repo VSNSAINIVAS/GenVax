@@ -78,7 +78,7 @@ public class SignUp extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), "Invalid Email", Toast.LENGTH_SHORT).show();
                         return;
                     }
-                    else if(count1==0 || count2==0 || count3==0){
+                   if(count1==0 || count2==0 || count3==0){
                         Toast.makeText(getApplicationContext(), "Set password that satisfy given fields", Toast.LENGTH_SHORT).show();
                     }
                     else{
@@ -100,14 +100,15 @@ public class SignUp extends AppCompatActivity {
                                 data[1] = username;
                                 data[2] = password;
                                 data[3] = email;
-                                PutData putData = new PutData("192.168.0.119/LoginRegister/signup.php", "POST", field, data);
+                                PutData putData = new PutData("http://192.168.0.119/LoginRegister/signup.php", "POST", field, data);
                                 if (putData.startPut()) {
                                     if (putData.onComplete()) {
                                         progressBar.setVisibility(View.GONE);
                                         String result = putData.getResult();
+                                        System.out.println(result);
                                         if(result.equals("Sign Up Success")){
                                             Toast.makeText(getApplicationContext(),result,Toast.LENGTH_SHORT).show();
-                                            Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                                            Intent intent = new Intent(getApplicationContext(),Login.class);
                                             // Create an explicit intent for an Activity in your app
                                             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                             PendingIntent pendingIntent = PendingIntent.getActivity(SignUp.this, 0, intent, 0);
@@ -115,7 +116,7 @@ public class SignUp extends AppCompatActivity {
                                             NotificationCompat.Builder builder = new NotificationCompat.Builder(SignUp.this, "channel1")
                                                     .setSmallIcon(R.drawable.ic_notifications)
                                                     .setContentTitle("GenVax")
-                                                    .setContentText("Signup success")
+                                                    .setContentText("Signup success, Login to continue")
                                                     .setPriority(NotificationCompat.PRIORITY_DEFAULT)
                                                     // Set the intent that will fire when the user taps the notification
                                                     .setContentIntent(pendingIntent)
@@ -144,10 +145,8 @@ public class SignUp extends AppCompatActivity {
 
     public static boolean isValid(String email)
     {
-        String emailRegex = "^[a-zA-Z0-9_+&*-]+(?:\\."+
-                "[a-zA-Z0-9_+&-]+)@" +
-                "(?:[a-zA-Z0-9-]+\\.)+[a-z" +
-                "A-Z]{2,7}$";
+        String emailRegex = "^[a-zA-Z0-9_+&*-]+(?:\\.[a-zA-Z0-9_+&*-]+)*@" +  //part before @
+                "(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}$";
 
         Pattern pat = Pattern.compile(emailRegex);
         if (email == null)
