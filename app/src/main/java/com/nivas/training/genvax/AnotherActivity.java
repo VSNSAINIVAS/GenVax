@@ -11,8 +11,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class AnotherActivity extends AppCompatActivity {
-    ImageView imageView,back;
-    TextView title,doses,period;
+    protected ImageView imageView, back;
+    protected TextView title, doses, period;
     int position;
 
     @Override

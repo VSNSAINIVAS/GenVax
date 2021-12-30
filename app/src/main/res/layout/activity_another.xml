@@ -41,15 +41,14 @@
         />
 
     <TextView
+        android:id="@+id/period_of_duration"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/period_of_duration"
-        android:textColor="#3EA0ED"
-        android:textSize="20sp"
+        android:layout_below="@id/dosesText"
         android:gravity="center"
         android:text="Duration"
-        android:layout_below="@id/dosesText"
-        />
+        android:textColor="#0091EA"
+        android:textSize="20sp" />
 
     <ImageView
         android:id="@+id/backbutton"

@@ -22,13 +22,54 @@ import java.net.URI;
 
 public class List extends AppCompatActivity {
 
-    ListView listView;
-    String[] mTitle = {"BCG","Hepatitis B Birth Dose","OPV Birth Dose","OPV 1,2&3","IPV","Rota Virus Vaccine","Measles 1st Dose","Vitamin A 1st Dose","DPT 1st Booster",
-    "OPV Booster","Measles 2nd Dose","Vitamin A (2nd to 9th)","DPT 2nd Booster","TT"};
-    String[] mCategory = {"Infant Immunization","Infant Immunization","Infant Immunization","Infant Immunization","Infant Immunization","Infant Immunization","Infant Immunization","Infant Immunization",
-    "Child Immunization","Child Immunization","Child Immunization","Child Immunization","Child Immunization","Child Immunization"};
-    int[] images = {R.drawable.ic_medicine,R.drawable.ic_medicine,R.drawable.ic_medicine,R.drawable.ic_medicine,R.drawable.ic_medicine,R.drawable.ic_medicine,R.drawable.ic_medicine
-            ,R.drawable.ic_medicine,R.drawable.ic_medicine,R.drawable.ic_medicine,R.drawable.ic_medicine,R.drawable.ic_medicine,R.drawable.ic_medicine,R.drawable.ic_medicine};
+    protected ListView listView;
+    protected String[] mTitle = {
+            "BCG",
+            "Hepatitis B Birth Dose",
+            "OPV Birth Dose",
+            "OPV 1,2&3","IPV",
+            "Rota Virus Vaccine",
+            "Measles 1st Dose",
+            "Vitamin A 1st Dose",
+            "DPT 1st Booster",
+            "OPV Booster",
+            "Measles 2nd Dose",
+            "Vitamin A (2nd to 9th)",
+            "DPT 2nd Booster",
+            "TT"
+    };
+    protected String[] mCategory = {
+            "Infant Immunization",
+            "Infant Immunization",
+            "Infant Immunization",
+            "Infant Immunization",
+            "Infant Immunization",
+            "Infant Immunization",
+            "Infant Immunization",
+            "Infant Immunization",
+            "Child Immunization",
+            "Child Immunization",
+            "Child Immunization",
+            "Child Immunization",
+            "Child Immunization",
+            "Child Immunization"
+    };
+    protected int[] images = {
+            R.drawable.ic_medicine,
+            R.drawable.ic_medicine,
+            R.drawable.ic_medicine,
+            R.drawable.ic_medicine,
+            R.drawable.ic_medicine,
+            R.drawable.ic_medicine,
+            R.drawable.ic_medicine,
+            R.drawable.ic_medicine,
+            R.drawable.ic_medicine,
+            R.drawable.ic_medicine,
+            R.drawable.ic_medicine,
+            R.drawable.ic_medicine,
+            R.drawable.ic_medicine,
+            R.drawable.ic_medicine
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -215,10 +256,10 @@ public class List extends AppCompatActivity {
     }
 
     class MyAdapter extends ArrayAdapter<String>{
-        Context context;
-        String[] rTitle;
-        String[] rDescription;
-        int[] rImage;
+        protected Context context;
+        protected String[] rTitle;
+        protected String[] rDescription;
+        protected int[] rImage;
 
         MyAdapter(Context c,String[] title,String[] category,int[] image){
             super(c,R.layout.row,R.id.name,title);

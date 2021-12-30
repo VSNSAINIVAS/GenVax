@@ -9,9 +9,10 @@ import android.widget.Button;
 import android.widget.TextView;
 
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-    TextView textView;
-    Button dialnumber,openwebpage,otherActivity,view_details,national,who;
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    private TextView textView;
+    private Button dialnumber, openwebpage, otherActivity, view_details, national, who;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
