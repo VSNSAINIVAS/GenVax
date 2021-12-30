@@ -23,12 +23,53 @@ import java.net.URI;
 public class List extends AppCompatActivity {
 
     ListView listView;
-    String[] mTitle = {"BCG","Hepatitis B Birth Dose","OPV Birth Dose","OPV 1,2&3","IPV","Rota Virus Vaccine","Measles 1st Dose","Vitamin A 1st Dose","DPT 1st Booster",
-    "OPV Booster","Measles 2nd Dose","Vitamin A (2nd to 9th)","DPT 2nd Booster","TT"};
-    String[] mCategory = {"Infant Immunization","Infant Immunization","Infant Immunization","Infant Immunization","Infant Immunization","Infant Immunization","Infant Immunization","Infant Immunization",
-    "Child Immunization","Child Immunization","Child Immunization","Child Immunization","Child Immunization","Child Immunization"};
-    int[] images = {R.drawable.ic_medicine,R.drawable.ic_medicine,R.drawable.ic_medicine,R.drawable.ic_medicine,R.drawable.ic_medicine,R.drawable.ic_medicine,R.drawable.ic_medicine
-            ,R.drawable.ic_medicine,R.drawable.ic_medicine,R.drawable.ic_medicine,R.drawable.ic_medicine,R.drawable.ic_medicine,R.drawable.ic_medicine,R.drawable.ic_medicine};
+    String[] mTitle = {
+            "BCG",
+            "Hepatitis B Birth Dose",
+            "OPV Birth Dose",
+            "OPV 1,2&3","IPV",
+            "Rota Virus Vaccine",
+            "Measles 1st Dose",
+            "Vitamin A 1st Dose",
+            "DPT 1st Booster",
+            "OPV Booster",
+            "Measles 2nd Dose",
+            "Vitamin A (2nd to 9th)",
+            "DPT 2nd Booster",
+            "TT"
+    };
+    String[] mCategory = {
+            "Infant Immunization",
+            "Infant Immunization",
+            "Infant Immunization",
+            "Infant Immunization",
+            "Infant Immunization",
+            "Infant Immunization",
+            "Infant Immunization",
+            "Infant Immunization",
+            "Child Immunization",
+            "Child Immunization",
+            "Child Immunization",
+            "Child Immunization",
+            "Child Immunization",
+            "Child Immunization"
+    };
+    int[] images = {
+            R.drawable.ic_medicine,
+            R.drawable.ic_medicine,
+            R.drawable.ic_medicine,
+            R.drawable.ic_medicine,
+            R.drawable.ic_medicine,
+            R.drawable.ic_medicine,
+            R.drawable.ic_medicine,
+            R.drawable.ic_medicine,
+            R.drawable.ic_medicine,
+            R.drawable.ic_medicine,
+            R.drawable.ic_medicine,
+            R.drawable.ic_medicine,
+            R.drawable.ic_medicine,
+            R.drawable.ic_medicine
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

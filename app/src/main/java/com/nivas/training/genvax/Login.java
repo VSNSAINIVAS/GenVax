@@ -25,10 +25,11 @@ import com.vishnusivadas.advanced_httpurlconnection.PutData;
 
 public class Login extends AppCompatActivity {
 
-    TextInputEditText  textInputEditTextUsername, textInputEditTextPassword;
-    Button buttonLogin;
-    TextView textViewSignUp;
-    ProgressBar progressBar;
+    private TextInputEditText  textInputEditTextUsername, textInputEditTextPassword;
+    private Button buttonLogin;
+    private TextView textViewSignUp;
+    private ProgressBar progressBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

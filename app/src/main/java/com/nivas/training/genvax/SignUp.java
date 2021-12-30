@@ -23,17 +23,17 @@ import com.vishnusivadas.advanced_httpurlconnection.PutData;
 
 import java.util.regex.Pattern;
 
-interface genvax{
-    boolean isValid(String email) ;
+interface genvax {
+    boolean isValid(String email);
     boolean isValidpassword(String password);
 }
 
 public class SignUp extends AppCompatActivity implements genvax{
 
-    TextInputEditText textInputEditTextfullname, textInputEditTextUsername, textInputEditTextPassword, textInputEditTextEmail;
-    Button buttonSignUp;
-    TextView textViewLogin;
-    ProgressBar progressBar;
+    private TextInputEditText textInputEditTextfullname, textInputEditTextUsername, textInputEditTextPassword, textInputEditTextEmail;
+    private Button buttonSignUp;
+    private TextView textViewLogin;
+    private ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
