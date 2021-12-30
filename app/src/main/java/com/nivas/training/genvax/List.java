@@ -22,8 +22,8 @@ import java.net.URI;
 
 public class List extends AppCompatActivity {
 
-    ListView listView;
-    String[] mTitle = {
+    protected ListView listView;
+    protected String[] mTitle = {
             "BCG",
             "Hepatitis B Birth Dose",
             "OPV Birth Dose",
@@ -38,7 +38,7 @@ public class List extends AppCompatActivity {
             "DPT 2nd Booster",
             "TT"
     };
-    String[] mCategory = {
+    protected String[] mCategory = {
             "Infant Immunization",
             "Infant Immunization",
             "Infant Immunization",
@@ -54,7 +54,7 @@ public class List extends AppCompatActivity {
             "Child Immunization",
             "Child Immunization"
     };
-    int[] images = {
+    protected int[] images = {
             R.drawable.ic_medicine,
             R.drawable.ic_medicine,
             R.drawable.ic_medicine,
@@ -256,10 +256,10 @@ public class List extends AppCompatActivity {
     }
 
     class MyAdapter extends ArrayAdapter<String>{
-        Context context;
-        String[] rTitle;
-        String[] rDescription;
-        int[] rImage;
+        protected Context context;
+        protected String[] rTitle;
+        protected String[] rDescription;
+        protected int[] rImage;
 
         MyAdapter(Context c,String[] title,String[] category,int[] image){
             super(c,R.layout.row,R.id.name,title);
