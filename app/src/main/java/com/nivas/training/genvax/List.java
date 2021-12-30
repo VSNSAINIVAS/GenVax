@@ -58,8 +58,8 @@ public class List extends AppCompatActivity {
                     bundle.putInt("image",images[0]);
                     intent.putExtras(bundle);
                     intent.putExtra("title",mTitle[1]);
-                    intent.putExtra("doses","Number of doses : 1");
-                    intent.putExtra("period","Period of duration : 6Months");
+                    intent.putExtra("doses","Number of doses : 3");
+                    intent.putExtra("period","Period of duration : 15Months");
                     intent.putExtra("position",""+1);
 
                     startActivity(intent);
@@ -70,10 +70,10 @@ public class List extends AppCompatActivity {
                     bundle.putInt("image",images[0]);
                     intent.putExtras(bundle);
                     intent.putExtra("title",mTitle[2]);
-                    intent.putExtra("doses","Number of doses : 2");
-                    intent.putExtra("period","Period of duration : 6Months");
+                    intent.putExtra("doses","Number of doses : 1");
+                    intent.putExtra("period","Period of duration : Within 15 Days of birth");
                     intent.putExtra("position",""+2);
-                    intent.putExtra("link","https://www.who.int/immunization/polio_grad_opv_birth_dose.pdf");
+                    // intent.putExtra("link","https://www.who.int/immunization/polio_grad_opv_birth_dose.pdf");
                     startActivity(intent);
                 }
                 if(position==3){
@@ -82,8 +82,8 @@ public class List extends AppCompatActivity {
                     bundle.putInt("image",images[0]);
                     intent.putExtras(bundle);
                     intent.putExtra("title",mTitle[3]);
-                    intent.putExtra("period","Period of duration : 6Months");
-                    intent.putExtra("doses","Number of doses : 1");
+                    intent.putExtra("period","Period of duration : 14Weeks");
+                    intent.putExtra("doses","Number of doses : 3");
                     intent.putExtra("position",""+3);
 
                     startActivity(intent);
@@ -95,7 +95,7 @@ public class List extends AppCompatActivity {
                     intent.putExtras(bundle);
                     intent.putExtra("period","Period of duration : 6Months");
                     intent.putExtra("title",mTitle[4]);
-                    intent.putExtra("doses","Number of doses : 1");
+                    intent.putExtra("doses","Number of doses : 3");
                     intent.putExtra("position",""+4);
 
                     startActivity(intent);
@@ -105,7 +105,7 @@ public class List extends AppCompatActivity {
                     Bundle bundle = new Bundle();
                     bundle.putInt("image",images[0]);
                     intent.putExtras(bundle);
-                    intent.putExtra("period","Period of duration : 6Months");
+                    intent.putExtra("period","Period of duration : 12 to 15Months");
                     intent.putExtra("title",mTitle[5]);
                     intent.putExtra("doses","Number of doses : 1");
                     intent.putExtra("position",""+5);
@@ -117,7 +117,7 @@ public class List extends AppCompatActivity {
                     Bundle bundle = new Bundle();
                     bundle.putInt("image",images[0]);
                     intent.putExtras(bundle);
-                    intent.putExtra("period","Period of duration : 6Months");
+                    intent.putExtra("period","Period of duration : 9 to 12Months");
                     intent.putExtra("title",mTitle[6]);
                     intent.putExtra("doses","Number of doses : 1");
                     intent.putExtra("position",""+6);
@@ -130,7 +130,7 @@ public class List extends AppCompatActivity {
                     bundle.putInt("image",images[0]);
                     intent.putExtras(bundle);
                     intent.putExtra("title",mTitle[7]);
-                    intent.putExtra("period","Period of duration : 6Months");
+                    intent.putExtra("period","Period of duration : 16 to 24Months");
                     intent.putExtra("doses","Number of doses : 1");
                     intent.putExtra("position",""+7);
 
@@ -142,7 +142,7 @@ public class List extends AppCompatActivity {
                     bundle.putInt("image",images[0]);
                     intent.putExtras(bundle);
                     intent.putExtra("title",mTitle[8]);
-                    intent.putExtra("period","Period of duration : 6Months");
+                    intent.putExtra("period","Period of duration : 16 to 24 Months");
                     intent.putExtra("doses","Number of doses : 1");
                     intent.putExtra("position",""+8);
 
@@ -155,7 +155,7 @@ public class List extends AppCompatActivity {
                     intent.putExtras(bundle);
                     intent.putExtra("title",mTitle[9]);
                     intent.putExtra("doses","Number of doses : 1");
-                    intent.putExtra("period","Period of duration : 6Months");
+                    intent.putExtra("period","Period of duration : 16 to 24 Months");
                     intent.putExtra("position",""+9);
 
                     startActivity(intent);
@@ -165,7 +165,7 @@ public class List extends AppCompatActivity {
                     Bundle bundle = new Bundle();
                     bundle.putInt("image",images[0]);
                     intent.putExtras(bundle);
-                    intent.putExtra("period","Period of duration : 6Months");
+                    intent.putExtra("period","Period of duration : 16 to 24 Months");
                     intent.putExtra("title",mTitle[10]);
                     intent.putExtra("doses","Number of doses : 1");
                     intent.putExtra("position",""+10);
@@ -178,8 +178,8 @@ public class List extends AppCompatActivity {
                     bundle.putInt("image",images[0]);
                     intent.putExtras(bundle);
                     intent.putExtra("title",mTitle[11]);
-                    intent.putExtra("period","Period of duration : 6Months");
-                    intent.putExtra("doses","Number of doses : 1");
+                    intent.putExtra("period","Period of duration :18Month to 5Years");
+                    intent.putExtra("doses","Number of doses : 8");
                     intent.putExtra("position",""+11);
 
                     startActivity(intent);
@@ -191,7 +191,7 @@ public class List extends AppCompatActivity {
                     intent.putExtras(bundle);
                     intent.putExtra("title",mTitle[12]);
                     intent.putExtra("doses","Number of doses : 1");
-                    intent.putExtra("period","Period of duration : 6Months");
+                    intent.putExtra("period","Period of duration :  5 to 6 Years");
                     intent.putExtra("position",""+12);
 
                     startActivity(intent);
@@ -202,8 +202,8 @@ public class List extends AppCompatActivity {
                     bundle.putInt("image",images[0]);
                     intent.putExtras(bundle);
                     intent.putExtra("title",mTitle[13]);
-                    intent.putExtra("doses","Number of doses : 1");
-                    intent.putExtra("period","Period of duration : 6Months");
+                    intent.putExtra("doses","Number of doses : 3");
+                    intent.putExtra("period","Period of duration : 6 to 14 Week");
                     intent.putExtra("position",""+13);
 
                     startActivity(intent);

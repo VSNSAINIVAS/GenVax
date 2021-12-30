@@ -3,16 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/DELL/AndroidStudioProjects/GenVax/app/src/main/res/layout/activity_another.xml" value="0.264" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/GenVax/app/src/main/res/layout/activity_another.xml" value="0.21944444444444444" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/GenVax/app/src/main/res/layout/activity_fullscreen.xml" value="0.19948717948717948" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/GenVax/app/src/main/res/layout/activity_list.xml" value="0.21944444444444444" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/GenVax/app/src/main/res/layout/activity_login.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/GenVax/app/src/main/res/layout/activity_profile.xml" value="0.264" />
-        <entry key="..\:/Users/DELL/AndroidStudioProjects/GenVax/app/src/main/res/layout/activity_running.xml" value="0.264" />
-        <entry key="..\:/Users/DELL/AndroidStudioProjects/GenVax/app/src/main/res/layout/activity_sign_up.xml" value="0.5540372670807453" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/GenVax/app/src/main/res/layout/activityone_listview.xml" value="0.21944444444444444" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/GenVax/app/src/main/res/layout/acttivity_main.xml" value="0.4" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/GenVax/app/src/main/res/layout/row.xml" value="0.21944444444444444" />
+        <entry key="..\:/VJK Study/Semester 3 All/CS201 261 OOP D P/GENVAX PROJECT/GenVax/app/src/main/res/layout/activity_another.xml" value="0.23229166666666667" />
       </map>
     </option>
   </component>
