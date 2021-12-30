@@ -23,17 +23,17 @@ import com.vishnusivadas.advanced_httpurlconnection.PutData;
 
 import java.util.regex.Pattern;
 
-interface genvax{
-    boolean isValid(String email) ;
+interface genvax {
+    boolean isValid(String email);
     boolean isValidpassword(String password);
 }
 
 public class SignUp extends AppCompatActivity implements genvax{
 
-    TextInputEditText textInputEditTextfullname, textInputEditTextUsername, textInputEditTextPassword, textInputEditTextEmail;
-    Button buttonSignUp;
-    TextView textViewLogin;
-    ProgressBar progressBar;
+    private TextInputEditText textInputEditTextfullname, textInputEditTextUsername, textInputEditTextPassword, textInputEditTextEmail;
+    private Button buttonSignUp;
+    private TextView textViewLogin;
+    private ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,7 +71,7 @@ public class SignUp extends AppCompatActivity implements genvax{
                         Toast.makeText(getApplicationContext(), "Invalid Email", Toast.LENGTH_SHORT).show();
                         return;
                     }
-                   if(!isValidpassword(password)){
+                    if(!isValidpassword(password)){
                         Toast.makeText(getApplicationContext(), "Set password that satisfy given fields", Toast.LENGTH_SHORT).show();
                     }
                     else{
@@ -93,7 +93,7 @@ public class SignUp extends AppCompatActivity implements genvax{
                                 data[1] = username;
                                 data[2] = password;
                                 data[3] = email;
-                                PutData putData = new PutData("http://192.168.1.67/LoginRegister/signup.php", "POST", field, data);
+                                PutData putData = new PutData("http://192.168.0.119/LoginRegister/signup.php", "POST", field, data);
                                 if (putData.startPut()) {
                                     if (putData.onComplete()) {
                                         progressBar.setVisibility(View.GONE);

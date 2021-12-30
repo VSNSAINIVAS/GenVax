@@ -25,10 +25,11 @@ import com.vishnusivadas.advanced_httpurlconnection.PutData;
 
 public class Login extends AppCompatActivity {
 
-    TextInputEditText  textInputEditTextUsername, textInputEditTextPassword;
-    Button buttonLogin;
-    TextView textViewSignUp;
-    ProgressBar progressBar;
+    private TextInputEditText  textInputEditTextUsername, textInputEditTextPassword;
+    private Button buttonLogin;
+    private TextView textViewSignUp;
+    private ProgressBar progressBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,7 +73,7 @@ public class Login extends AppCompatActivity {
                             String[] data = new String[2];
                             data[0] = username;
                             data[1] = password;
-                            PutData putData = new PutData("http://192.168.1.67/LoginRegister/login.php", "POST", field, data);
+                            PutData putData = new PutData("http://192.168.0.119/LoginRegister/login.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
                                     progressBar.setVisibility(View.GONE);
