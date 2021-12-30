@@ -43,17 +43,6 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/linksText"
-        android:textColor="#364BC1"
-        android:textSize="20sp"
-        android:gravity="center"
-        android:text="click here to see more details"
-        android:layout_below="@id/period_of_duration"
-        />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/period_of_duration"
         android:textColor="#3EA0ED"
         android:textSize="20sp"

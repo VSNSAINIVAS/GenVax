@@ -3,25 +3,32 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/DELL/AndroidStudioProjects/GenVax/app/src/main/res/layout/activity_another.xml" value="0.264" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/GenVax/app/src/main/res/layout/activity_another.xml" value="0.21944444444444444" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/GenVax/app/src/main/res/layout/activity_fullscreen.xml" value="0.19948717948717948" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/GenVax/app/src/main/res/layout/activity_list.xml" value="0.21944444444444444" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/GenVax/app/src/main/res/layout/activity_login.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/GenVax/app/src/main/res/layout/activity_main5.xml" value="0.2287179487179487" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/GenVax/app/src/main/res/layout/activity_notification_message.xml" value="0.2287179487179487" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/GenVax/app/src/main/res/layout/activity_profile.xml" value="0.264" />
+<<<<<<< HEAD
         <entry key="..\:/Users/DELL/AndroidStudioProjects/GenVax/app/src/main/res/layout/activity_reminder.xml" value="0.2287179487179487" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/GenVax/app/src/main/res/layout/activity_running.xml" value="0.264" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/GenVax/app/src/main/res/layout/activity_sign_up.xml" value="0.5540372670807453" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/GenVax/app/src/main/res/layout/activity_splash.xml" value="0.2287179487179487" />
+=======
+>>>>>>> 594eb9c9beda90364c6461346480f70553f6a898
         <entry key="..\:/Users/DELL/AndroidStudioProjects/GenVax/app/src/main/res/layout/activityone_listview.xml" value="0.21944444444444444" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/GenVax/app/src/main/res/layout/acttivity_main.xml" value="0.4" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/GenVax/app/src/main/res/layout/notification_layout.xml" value="0.2287179487179487" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/GenVax/app/src/main/res/layout/row.xml" value="0.21944444444444444" />
+<<<<<<< HEAD
         <entry key="..\:/Users/DELL/AndroidStudioProjects/GenVax/app/src/main/res/layout/single_reminder_file.xml" value="0.2287179487179487" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/Genvax1/GenVax/app/src/main/res/layout/activity_another.xml" value="0.2287179487179487" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/Genvax1/GenVax/app/src/main/res/layout/activity_list.xml" value="0.2287179487179487" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/Genvax1/GenVax/app/src/main/res/layout/row.xml" value="0.2287179487179487" />
+=======
+        <entry key="..\:/VJK Study/Semester 3 All/CS201 261 OOP D P/GENVAX PROJECT/GenVax/app/src/main/res/layout/activity_another.xml" value="0.23229166666666667" />
+>>>>>>> 594eb9c9beda90364c6461346480f70553f6a898
       </map>
     </option>
   </component>
@@ -30,5 +37,8 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="SuppressKotlinCodeStyleNotification">
+    <option name="disableForAll" value="true" />
   </component>
 </project>
