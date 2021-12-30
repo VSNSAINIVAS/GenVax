@@ -7,20 +7,27 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import android.content.Intent;
+import android.os.Handler;
+import android.os.Bundle;
+
 public class Running extends AppCompatActivity {
-    ImageView image;
+
+    private static final long SPLASH_TIMEOUT = 1500;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_running);
-        image = findViewById(R.id.imageView6);
-        image.setOnClickListener(new View.OnClickListener() {
+
+        new Handler().postDelayed(new Runnable() {
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Running.this,Login.class);
+            public void run() {
+                Intent intent  = new Intent(Running.this,Login.class);
                 startActivity(intent);
+                finish();
             }
-        });
+        },SPLASH_TIMEOUT);
+
     }
 }

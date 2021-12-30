@@ -15,5 +15,7 @@
     <color name="color1">#00AB8E</color>
     <color name="color2">#17EBE4</color>
     <color name="color3">#90EFF5</color>
-
+    <color name="cardwhite">#FFFFFF</color>
+    <color name="lightblack">#7C7878</color>
+    <color name="lightblue">#6491B5</color>
 </resources>

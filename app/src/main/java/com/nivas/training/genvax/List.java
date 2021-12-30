@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,6 +18,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.net.URI;
+
 public class List extends AppCompatActivity {
 
     ListView listView;
@@ -26,7 +29,6 @@ public class List extends AppCompatActivity {
     "Child Immunization","Child Immunization","Child Immunization","Child Immunization","Child Immunization","Child Immunization"};
     int[] images = {R.drawable.ic_medicine,R.drawable.ic_medicine,R.drawable.ic_medicine,R.drawable.ic_medicine,R.drawable.ic_medicine,R.drawable.ic_medicine,R.drawable.ic_medicine
             ,R.drawable.ic_medicine,R.drawable.ic_medicine,R.drawable.ic_medicine,R.drawable.ic_medicine,R.drawable.ic_medicine,R.drawable.ic_medicine,R.drawable.ic_medicine};
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,7 +55,7 @@ public class List extends AppCompatActivity {
 
                     startActivity(intent);
                 }
-                if(position==1){
+                else if(position==1){
                     Intent intent = new Intent(getApplicationContext(),AnotherActivity.class);
                     Bundle bundle = new Bundle();
                     bundle.putInt("image",images[0]);
@@ -65,7 +67,7 @@ public class List extends AppCompatActivity {
 
                     startActivity(intent);
                 }
-                if(position==2){
+                else if(position==2){
                     Intent intent = new Intent(getApplicationContext(),AnotherActivity.class);
                     Bundle bundle = new Bundle();
                     bundle.putInt("image",images[0]);
@@ -77,7 +79,7 @@ public class List extends AppCompatActivity {
 
                     startActivity(intent);
                 }
-                if(position==3){
+                else if(position==3){
                     Intent intent = new Intent(getApplicationContext(),AnotherActivity.class);
                     Bundle bundle = new Bundle();
                     bundle.putInt("image",images[0]);
@@ -89,7 +91,7 @@ public class List extends AppCompatActivity {
 
                     startActivity(intent);
                 }
-                if(position==4){
+                else if(position==4){
                     Intent intent = new Intent(getApplicationContext(),AnotherActivity.class);
                     Bundle bundle = new Bundle();
                     bundle.putInt("image",images[0]);
@@ -101,7 +103,7 @@ public class List extends AppCompatActivity {
 
                     startActivity(intent);
                 }
-                if(position==5){
+                else if(position==5){
                     Intent intent = new Intent(getApplicationContext(),AnotherActivity.class);
                     Bundle bundle = new Bundle();
                     bundle.putInt("image",images[0]);
@@ -113,7 +115,7 @@ public class List extends AppCompatActivity {
 
                     startActivity(intent);
                 }
-                if(position==6){
+                else if(position==6){
                     Intent intent = new Intent(getApplicationContext(),AnotherActivity.class);
                     Bundle bundle = new Bundle();
                     bundle.putInt("image",images[0]);
@@ -125,7 +127,7 @@ public class List extends AppCompatActivity {
 
                     startActivity(intent);
                 }
-                if(position==7){
+                else if(position==7){
                     Intent intent = new Intent(getApplicationContext(),AnotherActivity.class);
                     Bundle bundle = new Bundle();
                     bundle.putInt("image",images[0]);
@@ -137,7 +139,7 @@ public class List extends AppCompatActivity {
 
                     startActivity(intent);
                 }
-                if(position==8){
+                else if(position==8){
                     Intent intent = new Intent(getApplicationContext(),AnotherActivity.class);
                     Bundle bundle = new Bundle();
                     bundle.putInt("image",images[0]);
@@ -149,7 +151,7 @@ public class List extends AppCompatActivity {
 
                     startActivity(intent);
                 }
-                if(position==9){
+                else if(position==9){
                     Intent intent = new Intent(getApplicationContext(),AnotherActivity.class);
                     Bundle bundle = new Bundle();
                     bundle.putInt("image",images[0]);
@@ -161,7 +163,7 @@ public class List extends AppCompatActivity {
 
                     startActivity(intent);
                 }
-                if(position==10){
+                else if(position==10){
                     Intent intent = new Intent(getApplicationContext(),AnotherActivity.class);
                     Bundle bundle = new Bundle();
                     bundle.putInt("image",images[0]);
@@ -173,7 +175,7 @@ public class List extends AppCompatActivity {
 
                     startActivity(intent);
                 }
-                if(position==11){
+                else if(position==11){
                     Intent intent = new Intent(getApplicationContext(),AnotherActivity.class);
                     Bundle bundle = new Bundle();
                     bundle.putInt("image",images[0]);
@@ -185,7 +187,7 @@ public class List extends AppCompatActivity {
 
                     startActivity(intent);
                 }
-                if(position==12){
+                else if(position==12){
                     Intent intent = new Intent(getApplicationContext(),AnotherActivity.class);
                     Bundle bundle = new Bundle();
                     bundle.putInt("image",images[0]);
@@ -197,7 +199,7 @@ public class List extends AppCompatActivity {
 
                     startActivity(intent);
                 }
-                if(position==13){
+                else if(position==13){
                     Intent intent = new Intent(getApplicationContext(),AnotherActivity.class);
                     Bundle bundle = new Bundle();
                     bundle.putInt("image",images[0]);
