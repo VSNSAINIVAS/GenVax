@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private TextView textView;
+    private TextView textView,textView1;
     private Button dialnumber, openwebpage, otherActivity, view_details, national, who;
 
     @Override
@@ -24,6 +24,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         national = findViewById(R.id.DialHelplinenational);
         who = findViewById(R.id.WHO_WEBSITE);
         textView = (TextView) findViewById(R.id.text);
+        textView1 = findViewById(R.id.textView3);
+
+        textView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,Login.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         dialnumber.setOnClickListener(this);
         openwebpage.setOnClickListener(this);
@@ -62,7 +72,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch(view.getId()){
             case R.id.vaccination_schedule:
-                Intent intent = new Intent(MainActivity.this, MainActivity3.class);
+                Intent intent = new Intent(MainActivity.this, MainActivity5.class);
                 startActivity(intent);
                 break;
             case R.id.DialHelpline:

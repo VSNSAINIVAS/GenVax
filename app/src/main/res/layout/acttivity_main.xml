@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/vaccine"
-    android:paddingBottom="16dp"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
     android:paddingTop="16dp"
     android:paddingRight="16dp"
-    android:paddingLeft="16dp"
+    android:paddingBottom="16dp"
     tools:context=".MainActivity">
 
     <TextView
@@ -17,29 +18,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/welcome_to_genvax"
-        android:textSize="30sp"
-        android:textColor="@color/purple_500"/>
+        android:textColor="@color/purple_500"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/vaccination_schedule"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15sp"
+        android:layout_marginBottom="10sp"
         android:text="@string/schedule_vaccine" />
 
     <Button
         android:id="@+id/details_of_vaccine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15sp"
+        android:layout_marginBottom="10sp"
         android:text="@string/know_vaccine" />
 
     <Button
         android:id="@+id/covidtracker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="200sp"
+        android:layout_marginBottom="100sp"
         android:text="@string/worldometer" />
+
 
     <Button
         android:id="@+id/DialHelplinenational"
@@ -60,6 +62,19 @@
         android:id="@+id/WHO_WEBSITE"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="30sp"
         android:text="@string/who" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160sp"
+        android:layout_marginTop="5sp"
+        android:text="Logout"
+        android:textColor="@color/purple_500"
+        android:textSize="20sp" />
+
+
 
 </LinearLayout>

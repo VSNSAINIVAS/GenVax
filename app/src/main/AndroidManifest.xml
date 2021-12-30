@@ -44,6 +44,12 @@
             android:name=".MainActivity"
             android:exported="true" />
 
+        <activity android:name="com.nivas.training.genvax.ReminderActivity" />
+        <activity android:name="com.nivas.training.genvax.MainActivity5"/>
+
+
+        <receiver android:name="com.nivas.training.genvax.AlarmBrodcast" />
+
     </application>
 
 </manifest>
